@@ -16,7 +16,7 @@ const (
 	geoipURL        = "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
 	geositeFilename = "geosite.dat"
 	geositeURL      = "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
-	geoDlTmpPattern = ".hysteria-geoloader.dlpart.*"
+	geoDlTmpPattern = ".madman-geoloader.dlpart.*"
 
 	geoDefaultUpdateInterval = 7 * 24 * time.Hour // 7 days
 )

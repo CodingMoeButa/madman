@@ -17,7 +17,7 @@ const (
 	minAckRate                 = 0.8
 	congestionWindowMultiplier = 2
 
-	debugEnv           = "HYSTERIA_BRUTAL_DEBUG"
+	debugEnv           = "MADMAN_BRUTAL_DEBUG"
 	debugPrintInterval = 2
 )
 

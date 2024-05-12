@@ -14,17 +14,17 @@ import (
 
 const (
 	appLogo = `
-░█░█░█░█░█▀▀░▀█▀░█▀▀░█▀▄░▀█▀░█▀█░░░▀▀▄
-░█▀█░░█░░▀▀█░░█░░█▀▀░█▀▄░░█░░█▀█░░░▄▀░
-░▀░▀░░▀░░▀▀▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀░▀░░░▀▀▀
+░█▄█░█▀█░█▀▄░█▄█░█▀█░█▄█░░░▀▀▄
+░█░█░█▀█░█ █░█░█░█▀█░███░░░▄▀░
+░▀░▀░▀░▀░▀▀ ░▀░▀░▀░▀░▀░▀░░░▀▀▀
 `
-	appDesc    = "a powerful, lightning fast and censorship resistant proxy"
-	appAuthors = "Aperture Internet Laboratory <https://github.com/apernet>"
+	appDesc    = "A rename version of a powerful and lightning fast proxy."
+	appAuthors = "Coding Moe Buta <https://github.com/CodingMoeButa>"
 
-	appLogLevelEnv           = "HYSTERIA_LOG_LEVEL"
-	appLogFormatEnv          = "HYSTERIA_LOG_FORMAT"
-	appDisableUpdateCheckEnv = "HYSTERIA_DISABLE_UPDATE_CHECK"
-	appACMEDirEnv            = "HYSTERIA_ACME_DIR"
+	appLogLevelEnv           = "MADMAN_LOG_LEVEL"
+	appLogFormatEnv          = "MADMAN_LOG_FORMAT"
+	appDisableUpdateCheckEnv = "MADMAN_DISABLE_UPDATE_CHECK"
+	appACMEDirEnv            = "MADMAN_ACME_DIR"
 )
 
 var (
@@ -58,7 +58,7 @@ var (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "hysteria",
+	Use:   "madman",
 	Short: appDesc,
 	Long:  appAboutLong,
 	Run:   runClient, // Default to client mode
@@ -123,8 +123,8 @@ func initConfig() {
 		viper.SetConfigType("yaml")
 		viper.SupportedExts = append([]string{"yaml", "yml"}, viper.SupportedExts...)
 		viper.AddConfigPath(".")
-		viper.AddConfigPath("$HOME/.hysteria")
-		viper.AddConfigPath("/etc/hysteria/")
+		viper.AddConfigPath("$HOME/.madman")
+		viper.AddConfigPath("/etc/madman/")
 	}
 }
 

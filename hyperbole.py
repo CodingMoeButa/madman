@@ -199,7 +199,7 @@ def cmd_build(pprof=False, release=False, race=False):
     for os_name, arch in get_app_platforms():
         print("Building for %s/%s..." % (os_name, arch))
 
-        out_name = "hysteria-%s-%s" % (os_name, arch)
+        out_name = "madman-%s-%s" % (os_name, arch)
         if os_name == "windows":
             out_name += ".exe"
 
